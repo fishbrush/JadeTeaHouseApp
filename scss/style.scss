@@ -1,0 +1,36 @@
+$font-stack: Arial, Helvetica, sans-serif;  
+$background-colour: #f4f4f4;
+$logo-colour: #3B3B3B;
+$heading-colour: #707070;
+$mainbutton-colour: #006B69;
+$headingbutton-colour: #54A392;
+$addbutton-colour: #008A42;
+
+//body {
+   // background-color: $background-colour;
+    //font-family: $font-stack;
+    //line-height: 1.6;
+//}
+
+img {
+    width: 100%;
+}
+
+.startpage {
+    background-color: $background-colour;
+    color: $heading-colour;
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
