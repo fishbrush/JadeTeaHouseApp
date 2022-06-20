@@ -1,4 +1,5 @@
-$font-stack: Arial, Helvetica, sans-serif;  
+$font-stack: 'Questrial', sans-serif;
+$font-script: 'Dancing Script', cursive; 
 $background-colour: #f4f4f4;
 $logo-colour: #3B3B3B; /*Coal*/
 $heading-colour: #707070; 
@@ -19,7 +20,7 @@ $coal: #3B3B3B;
     text-align: center;
     text-decoration: none;
     display: inline-flex
-    size: 16px;
+   
 }
 
 //body {
@@ -27,10 +28,16 @@ $coal: #3B3B3B;
     //font-family: $font-stack;
     //line-height: 1.6;
 //}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
 
 img {
     width: 100%;
-}
+    }
 
 .startpage {
     background-color: $background-colour;
@@ -55,4 +62,11 @@ img {
     }
 
 
+
+
+.greeting{
+font-family: $font-stack;
+color: $heading-colour;
+padding-top: 50px;
+text-align: center;
 }
