@@ -1,39 +1,64 @@
-$font-stack: 'Questrial', sans-serif;
+$font-stack: 'Questrial';
 $font-script: 'Dancing Script', cursive; 
 $background-colour: #f4f4f4;
 $logo-colour: #3B3B3B; /*Coal*/
 $heading-colour: #707070; 
-//$mainbutton-colour: #006B69; /*Teal*///
-//$headingbutton-colour: #54A392; /*Seafoam*///
-//$addbutton-colour: #008A42; /*Grass*///
 
-$sage: #9FB29D;
-$seafoam: #54A392;
-$grass: #008A42;
-$teal: #006B69;
-$coal: #3B3B3B;
 
-@mixin mainbutton-theme {
-    background-color: #006B69;
-    border-color: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-flex
-   
+//$colour-sage: #9FB29D;
+//$colour-seafoam: #54A392;
+//$colour-grass: #008A42;
+//$colour-teal: #006B69;
+//$colour-coal: #3B3B3B;
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');;
+
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background:darken($bg,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:lighten($bg,10%);
+  } 
 }
+
+.btn {
+ color:white;
+ text-decoration:none;
+ padding:15px 32px;
+ border-radius:3px;
+ font-family: 'Questrial';
+ font-size:24px;
+ text-align: center;
+ display: inline-flex;
+ border-radius: 40px
+}
+
+.btn-main {
+   @include button-bg(#006B69);
+}
+
+.btn-heading {
+   @include button-bg(#54A392);
+}
+
+.btn-add{
+   @include button-bg(#008A42);
+}
+
+.btn-cancel {
+   @include button-bg(#FFFFFF);
+  color: #006B69;
+}
+
 
 //body {
    // background-color: $background-colour;
     //font-family: $font-stack;
     //line-height: 1.6;
 //}
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-
 
 img {
     width: 100%;
