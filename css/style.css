@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
 img {
   width: 100%;
 }
@@ -16,4 +22,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.greeting {
+  font-family: "Questrial", sans-serif;
+  color: #707070;
 }

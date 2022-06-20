@@ -1,4 +1,5 @@
-$font-stack: Arial, Helvetica, sans-serif;  
+$font-stack: 'Questrial', sans-serif;
+$font-script: 'Dancing Script', cursive; 
 $background-colour: #f4f4f4;
 $logo-colour: #3B3B3B;
 $heading-colour: #707070;
@@ -11,10 +12,16 @@ $addbutton-colour: #008A42;
     //font-family: $font-stack;
     //line-height: 1.6;
 //}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
 
 img {
     width: 100%;
-}
+    }
 
 .startpage {
     background-color: $background-colour;
@@ -33,4 +40,9 @@ img {
         justify-content: center;
 
     }
+}
+
+.greeting{
+font-family: $font-stack;
+color: $heading-colour;
 }
