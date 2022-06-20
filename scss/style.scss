@@ -1,10 +1,26 @@
 $font-stack: Arial, Helvetica, sans-serif;  
 $background-colour: #f4f4f4;
-$logo-colour: #3B3B3B;
-$heading-colour: #707070;
-$mainbutton-colour: #006B69;
-$headingbutton-colour: #54A392;
-$addbutton-colour: #008A42;
+$logo-colour: #3B3B3B; /*Coal*/
+$heading-colour: #707070; 
+//$mainbutton-colour: #006B69; /*Teal*///
+//$headingbutton-colour: #54A392; /*Seafoam*///
+//$addbutton-colour: #008A42; /*Grass*///
+
+$sage: #9FB29D;
+$seafoam: #54A392;
+$grass: #008A42;
+$teal: #006B69;
+$coal: #3B3B3B;
+
+@mixin mainbutton-theme {
+    background-color: #006B69;
+    border-color: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex
+    size: 16px;
+}
 
 //body {
    // background-color: $background-colour;
@@ -32,5 +48,11 @@ img {
         align-items: center;
         justify-content: center;
 
+
+
+        }
+
     }
+
+
 }
