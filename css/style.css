@@ -27,4 +27,6 @@ img {
 .greeting {
   font-family: "Questrial", sans-serif;
   color: #707070;
+  padding-top: 50px;
+  text-align: center;
 }
