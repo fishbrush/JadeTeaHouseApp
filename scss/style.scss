@@ -1,9 +1,14 @@
-$font-stack: 'Questrial';
-$font-script: 'Dancing Script', cursive; 
-$background-colour: #f4f4f4;
-$logo-colour: #3B3B3B; /*Coal*/
-$heading-colour: #707070; 
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
 
+$font-stack: "Questrial";
+$background-colour: #f4f4f4;
+$logo-colour: #3b3b3b; /*Coal*/
+$heading-colour: #707070;
 
 //$colour-sage: #9FB29D;
 //$colour-seafoam: #54A392;
@@ -11,87 +16,85 @@ $heading-colour: #707070;
 //$colour-teal: #006B69;
 //$colour-coal: #3B3B3B;
 
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');;
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
 @mixin button-bg($bg) {
   background: $bg;
   &:hover {
-    background:darken($bg,8%);
+    background: darken($bg, 8%);
     transition: all 0.3s ease;
   }
   &:active {
-    background:lighten($bg,10%);
-  } 
+    background: lighten($bg, 10%);
+  }
 }
 
 .btn {
- color:white;
- text-decoration:none;
- padding:15px 32px;
- border-radius:3px;
- font-family: 'Questrial';
- font-size:24px;
- text-align: center;
- display: inline-flex;
- border-radius: 40px
+  color: white;
+  text-decoration: none;
+  padding: 20px 28px;
+  border-radius: 30px;
+  font-family: "Questrial";
+  font-size: 28px;
 }
 
 .btn-main {
-   @include button-bg(#006B69);
+  @include button-bg(#006b69);
 }
 
 .btn-heading {
-   @include button-bg(#54A392);
+  @include button-bg(#54a392);
 }
 
-.btn-add{
-   @include button-bg(#008A42);
+.btn-add {
+  @include button-bg(#008a42);
 }
 
 .btn-cancel {
-   @include button-bg(#FFFFFF);
-  color: #006B69;
+  @include button-bg(#ffffff);
+  color: #006b69;
 }
-
 
 //body {
-   // background-color: $background-colour;
-    //font-family: $font-stack;
-    //line-height: 1.6;
+// background-color: $background-colour;
+//font-family: $font-stack;
+//line-height: 1.6;
 //}
 
-img {
-    width: 100%;
-    }
+.logo {
+  &__img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+  }
+}
 
 .startpage {
-    background-color: $background-colour;
-    color: $heading-colour;
-    
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+  background-color: $background-colour;
+  color: $heading-colour;
 
-    &-content {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-
-
-        }
-
-    }
-
-
-
-
-.greeting{
-font-family: $font-stack;
-color: $heading-colour;
-padding-top: 50px;
-text-align: center;
+  &-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
+
+.container {
+  padding-top: 3%;
+}
+
+.greeting {
+  font-family: $font-stack;
+  color: $heading-colour;
+  padding-top: 50px;
+  text-align: center;
+}
+
