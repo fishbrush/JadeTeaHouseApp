@@ -5,24 +5,16 @@
   box-sizing: border-box;
 }
 
-$font-stack: "Questrial";
+$button-font: "Questrial";
+
 $background-colour: #f4f4f4;
 $logo-colour: #3b3b3b; /*Coal*/
 $heading-colour: #707070;
-
-//$colour-sage: #9FB29D;
-//$colour-seafoam: #54A392;
-//$colour-grass: #008A42;
-//$colour-teal: #006B69;
-//$colour-coal: #3B3B3B;
-
-// to remove later, just to provide a guide for how it looks in a tablet
-.ipadborder {
-  margin: 0 auto;
-  padding-top: 60px;
-  max-width: 1000px;
-  border: 1px solid black;
-}
+$sage: #9FB29D;
+$seafoam: #54A392;
+$grass: #008A42;
+$teal: #006B69;
+$coal: #3B3B3B;
 
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
@@ -39,28 +31,16 @@ $heading-colour: #707070;
 
 .btn {
   color: white;
-  text-decoration: none;
-  padding: 20px 0;
+  padding: 20px 28px;
   border-radius: 30px;
-  font-family: "Questrial";
-  font-size: 18px;
-  text-align: center;
+  font-family: $button-font;
+  font-size: 28px;
 
-  &__start{
-    display: block;
-    margin: 0 auto;
-    margin-top: 40px;
-    width: 25%;
-  }
 
-  &__return{
-    border-radius: 24px;
-    padding: 15px 0;
-    display: block;
-    width: 25%
+  &return-btn {
+    //padding:
   }
 }
-
 
 .btn-main {
   @include button-bg(#006b69);
@@ -79,53 +59,60 @@ $heading-colour: #707070;
   color: #006b69;
 }
 
-//body {
-// background-color: $background-colour;
-//font-family: $font-stack;
-//line-height: 1.6;
-//}
+.start-btn{
+  //margin: 0 auto;
+  display: grid;
+  margin: 0 auto;
+  width: 30%;
+  justify-content: center;
+}
 
 .logo {
+  
+  &__start {
+
+  }
+  
   &__img {
     display: block;
-    margin: 0 auto;
-    width: 30%;
+    margin: 25px auto;
+    width: 40%;
+    padding-left: 20px;
   }
-  &__table {
-    display: block;
-    width: 30%;
-    margin: 0 auto;
-  }
+}
 
-  &__all {
-    margin-bottom: 20px;
-  }
+.logo__start
+
+// .startpage {
+//   background-color: $background-colour;
+//   color: $heading-colour;
+
+//   nav {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+
+//   &-content {
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+// }
+
+.container {
+  padding-top: 3%;
 }
 
 .greeting {
-  color: $heading-colour;
   font-family: $font-stack;
-  font-size: 36px;
-  font-weight: 100;
-  padding-bottom: 60px;
+  color: $heading-colour;
+  padding-top: 50px;
   text-align: center;
 }
 
-.box {
-  text-align: center;
-  &__table {
-    font-size: 16px;
-    text-align: left;
-    margin-top: 20px;
-    padding: 0 0 40px;
-  }
-}
 
-.heading {
-  color: $heading-colour;
-  font-family: $font-stack;
-  font-size: 36px;
-  font-weight: 100;
 
   &__table {
     padding: 20px 0;
