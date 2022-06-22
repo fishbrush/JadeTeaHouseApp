@@ -22,6 +22,14 @@
   font-family: "Questrial";
   font-size: 26px;
 }
+.btn__submit {
+  border-radius: 24px;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 30%;
+}
 
 .btn-main {
   background: #006b69;
@@ -78,6 +86,9 @@
   width: 30%;
   margin: 0 auto;
 }
+.logo__all {
+  margin-bottom: 20px;
+}
 
 .greeting {
   color: #707070;
@@ -105,11 +116,29 @@
   padding: 0 0 40px;
 }
 
-.heading__table {
+.feedbackbox {
+  width: 100px;
+}
+
+.heading {
   color: #707070;
   font-family: "Questrial";
   font-size: 36px;
   font-weight: 100;
+}
+.heading__table {
   padding: 20px 0;
   text-align: center;
+}
+.heading__menu {
+  padding: 20px 0;
+  text-align: right;
+}
+.heading__endpage {
+  padding: 0 0 40px 0;
+  text-align: center;
+}
+
+.container__endpage {
+  margin: 100px auto;
 }

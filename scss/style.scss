@@ -43,8 +43,18 @@ padding-top: 60px;
   padding: 20px 0;
   border-radius: 30px;
   font-family: "Questrial";
-  font-size: 26px;
-}
+  font-size: 18px;
+
+  &__submit{
+    border-radius: 24px;
+    display: block;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 30%;
+  }
+
+
+
 
 .btn-main {
   @include button-bg(#006b69);
@@ -80,6 +90,11 @@ padding-top: 60px;
      width: 30%;
      margin: 0 auto;
   }
+
+  &__all{
+    margin-bottom: 20px;
+  }
+
 }
 
 .greeting {
@@ -108,11 +123,30 @@ padding-top: 60px;
   }
 }
 
-.heading__table{
-  color: $heading-colour;
-  font-family: $font-stack;
-  font-size: 36px;
-  font-weight: 100;
-  padding: 20px 0;
+.heading{
+   color: $heading-colour;
+   font-family: $font-stack;
+   font-size: 36px;
+   font-weight: 100;
+
+&__table{
+padding: 20px 0;
   text-align: center;
+}
+
+&__menu{
+padding: 20px 0;
+  text-align: right;
+}
+
+  &__endpage{
+   padding: 0 0 40px 0;
+  text-align: center;
+  }
+}
+
+.container{
+  &__endpage{
+    margin: 100px auto;
+  }
 }
