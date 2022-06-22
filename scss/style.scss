@@ -137,6 +137,10 @@ $heading-colour: #707070;
     text-align: right;
   }
 
+  &__feedback{
+    margin-bottom: 20px;
+  }
+
   &__endpage {
     padding: 0 0 40px 0;
     text-align: center;
@@ -148,3 +152,5 @@ $heading-colour: #707070;
     margin: 100px auto;
   }
 }
+
+
