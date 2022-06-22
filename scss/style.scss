@@ -5,16 +5,16 @@
   box-sizing: border-box;
 }
 
-$font-stack: "Questrial";
+$button-font: "Questrial";
+
 $background-colour: #f4f4f4;
 $logo-colour: #3b3b3b; /*Coal*/
 $heading-colour: #707070;
-
-//$colour-sage: #9FB29D;
-//$colour-seafoam: #54A392;
-//$colour-grass: #008A42;
-//$colour-teal: #006B69;
-//$colour-coal: #3B3B3B;
+$sage: #9FB29D;
+$seafoam: #54A392;
+$grass: #008A42;
+$teal: #006B69;
+$coal: #3B3B3B;
 
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
@@ -31,11 +31,15 @@ $heading-colour: #707070;
 
 .btn {
   color: white;
-  text-decoration: none;
   padding: 20px 28px;
   border-radius: 30px;
-  font-family: "Questrial";
+  font-family: $button-font;
   font-size: 28px;
+
+
+  &return-btn {
+    //padding:
+  }
 }
 
 .btn-main {
@@ -55,37 +59,47 @@ $heading-colour: #707070;
   color: #006b69;
 }
 
-//body {
-// background-color: $background-colour;
-//font-family: $font-stack;
-//line-height: 1.6;
-//}
+.start-btn{
+  //margin: 0 auto;
+  display: grid;
+  margin: 0 auto;
+  width: 30%;
+  justify-content: center;
+}
 
 .logo {
+  
+  &__start {
+
+  }
+  
   &__img {
     display: block;
-    margin: 0 auto;
+    margin: 25px auto;
     width: 40%;
+    padding-left: 20px;
   }
 }
 
-.startpage {
-  background-color: $background-colour;
-  color: $heading-colour;
+.logo__start
 
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+// .startpage {
+//   background-color: $background-colour;
+//   color: $heading-colour;
 
-  &-content {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
+//   nav {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+
+//   &-content {
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+// }
 
 .container {
   padding-top: 3%;
@@ -98,6 +112,5 @@ $heading-colour: #707070;
   text-align: center;
 }
 
-.start-btn{
-  margin: 0 auto;
-}
+
+
