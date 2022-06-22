@@ -5,13 +5,7 @@
   box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-
 $button-font: "Questrial";
-$logo-font: "Dancing Script";
-$heading-font: "Comfortaa";
 
 $background-colour: #f4f4f4;
 $logo-colour: #3b3b3b; /*Coal*/
@@ -21,6 +15,8 @@ $seafoam: #54A392;
 $grass: #008A42;
 $teal: #006B69;
 $coal: #3B3B3B;
+
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
 @mixin button-bg($bg) {
   background: $bg;
@@ -35,37 +31,36 @@ $coal: #3B3B3B;
 
 .btn {
   color: white;
-  //padding: 20px 28px;
-  //border-radius: 30px;
+  padding: 20px 28px;
+  border-radius: 30px;
   font-family: $button-font;
   font-size: 28px;
 
-  &-main {
-    @include button-bg($teal);
-  }
 
-  &-heading {
-    @include button-bg($seafoam);
-  }
-  
-  &-add {
-    @include button-bg($grass);
-  }
-
-  &-cancel {
-    @include button-bg(#ffffff);
-    color: $teal;
-  }
-
-  &__start {
-  display: flexbox;
-  margin: 0 auto;
-  width: 30%;
-  justify-content: center;
+  &return-btn {
+    //padding:
   }
 }
 
+.btn-main {
+  @include button-bg(#006b69);
+}
+
+.btn-heading {
+  @include button-bg(#54a392);
+}
+
+.btn-add {
+  @include button-bg(#008a42);
+}
+
+.btn-cancel {
+  @include button-bg(#ffffff);
+  color: #006b69;
+}
+
 .start-btn{
+  //margin: 0 auto;
   display: grid;
   margin: 0 auto;
   width: 30%;
@@ -74,12 +69,9 @@ $coal: #3B3B3B;
 
 .logo {
   
-  // &__all { - tried to use this for table.html but it just blows up? used img instead
-  //   display: block;
-  //   margin: 25px auto;
-  //   width: 40%;
-  //   padding-left: 20px;
-  // }
+  &__start {
+
+  }
   
   &__img {
     display: block;
@@ -89,10 +81,25 @@ $coal: #3B3B3B;
   }
 }
 
-.ipadborder {
-  max-height: 1000px;
-  max-width: 1000px;
-}
+.logo__start
+
+// .startpage {
+//   background-color: $background-colour;
+//   color: $heading-colour;
+
+//   nav {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+
+//   &-content {
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+// }
 
 .container {
   padding-top: 3%;
@@ -105,24 +112,5 @@ $coal: #3B3B3B;
   text-align: center;
 }
 
-.heading {
-
-  &__table{
-    font-family: $heading-font;
-    text-align: center;
-    color: $heading-colour;
-    padding-top: 50px;
-    padding-left: 70px;
-    justify-content: center;  
-  }
-
-}
 
 
-
-.box {
-  
-  &__table { 
-    display: block;
-}
-}
