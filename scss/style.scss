@@ -17,9 +17,9 @@ $heading-colour: #707070;
 //$colour-coal: #3B3B3B;
 
 // to remove later, just to provide a guide for how it looks in a tablet
-.ipadborder{
- margin: 0 auto;
-padding-top: 60px;
+.ipadborder {
+  margin: 0 auto;
+  padding-top: 60px;
   max-width: 1000px;
   border: 1px solid black;
 }
@@ -44,16 +44,22 @@ padding-top: 60px;
   border-radius: 30px;
   font-family: "Questrial";
   font-size: 18px;
+  text-align: center;
 
-  &__submit{
-    border-radius: 24px;
+  &__start{
     display: block;
-    margin-bottom: 50px;
-    text-align: center;
-    width: 30%;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 25%;
   }
 
-
+  &__return{
+    border-radius: 24px;
+    padding: 15px 0;
+    display: block;
+    width: 25%
+  }
+}
 
 
 .btn-main {
@@ -85,16 +91,15 @@ padding-top: 60px;
     margin: 0 auto;
     width: 30%;
   }
-  &__table{
+  &__table {
     display: block;
-     width: 30%;
-     margin: 0 auto;
+    width: 30%;
+    margin: 0 auto;
   }
 
-  &__all{
+  &__all {
     margin-bottom: 20px;
   }
-
 }
 
 .greeting {
@@ -106,47 +111,40 @@ padding-top: 60px;
   text-align: center;
 }
 
-.start-btn{
-  display: block;
-    margin: 5% auto;
+.box {
   text-align: center;
-  width: 25%;
-}
-
-.box{
-  text-align: center;
-  &__table{
+  &__table {
     font-size: 16px;
     text-align: left;
-    margin-top:20px ;
-    padding:0 0 40px ;
+    margin-top: 20px;
+    padding: 0 0 40px;
   }
 }
 
-.heading{
-   color: $heading-colour;
-   font-family: $font-stack;
-   font-size: 36px;
-   font-weight: 100;
+.heading {
+  color: $heading-colour;
+  font-family: $font-stack;
+  font-size: 36px;
+  font-weight: 100;
 
-&__table{
-padding: 20px 0;
-  text-align: center;
-}
+  &__table {
+    padding: 20px 0;
+    text-align: center;
+  }
 
-&__menu{
-padding: 20px 0;
-  text-align: right;
-}
+  &__menu {
+    padding: 20px 0;
+    text-align: right;
+  }
 
-  &__endpage{
-   padding: 0 0 40px 0;
-  text-align: center;
+  &__endpage {
+    padding: 0 0 40px 0;
+    text-align: center;
   }
 }
 
-.container{
-  &__endpage{
+.container {
+  &__endpage {
     margin: 100px auto;
   }
 }

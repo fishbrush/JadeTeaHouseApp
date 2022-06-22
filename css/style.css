@@ -20,15 +20,20 @@
   padding: 20px 0;
   border-radius: 30px;
   font-family: "Questrial";
-  font-size: 26px;
-}
-.btn__submit {
-  border-radius: 24px;
   font-size: 18px;
-  display: block;
-  margin-bottom: 50px;
   text-align: center;
-  width: 30%;
+}
+.btn__start {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 25%;
+}
+.btn__return {
+  border-radius: 24px;
+  padding: 15px 0;
+  display: block;
+  width: 25%;
 }
 
 .btn-main {
@@ -99,13 +104,6 @@
   text-align: center;
 }
 
-.start-btn {
-  display: block;
-  margin: 5% auto;
-  text-align: center;
-  width: 25%;
-}
-
 .box {
   text-align: center;
 }
@@ -114,10 +112,6 @@
   text-align: left;
   margin-top: 20px;
   padding: 0 0 40px;
-}
-
-.feedbackbox {
-  width: 100px;
 }
 
 .heading {
