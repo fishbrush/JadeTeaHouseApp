@@ -16,6 +16,14 @@ $heading-colour: #707070;
 //$colour-teal: #006B69;
 //$colour-coal: #3B3B3B;
 
+// to remove later, just to provide a guide for how it looks in a tablet
+.ipadborder{
+ margin: 0 auto;
+padding-top: 60px;
+  max-width: 1000px;
+  border: 1px solid black;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
 @mixin button-bg($bg) {
@@ -32,10 +40,10 @@ $heading-colour: #707070;
 .btn {
   color: white;
   text-decoration: none;
-  padding: 20px 28px;
+  padding: 20px 0;
   border-radius: 30px;
   font-family: "Questrial";
-  font-size: 28px;
+  font-size: 26px;
 }
 
 .btn-main {
@@ -65,39 +73,46 @@ $heading-colour: #707070;
   &__img {
     display: block;
     margin: 0 auto;
-    width: 40%;
+    width: 30%;
   }
-}
-
-.startpage {
-  background-color: $background-colour;
-  color: $heading-colour;
-
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  &__table{
+    display: block;
+     width: 30%;
+     margin: 0 auto;
   }
-
-  &-content {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-.container {
-  padding-top: 3%;
 }
 
 .greeting {
-  font-family: $font-stack;
   color: $heading-colour;
-  padding-top: 50px;
+  font-family: $font-stack;
+  font-size: 36px;
+  font-weight: 100;
+  padding-bottom: 60px;
   text-align: center;
 }
 
 .start-btn{
-  margin: 0 auto;
+  display: block;
+    margin: 5% auto;
+  text-align: center;
+  width: 25%;
+}
+
+.box{
+  text-align: center;
+  &__table{
+    font-size: 16px;
+    text-align: left;
+    margin-top:20px ;
+    padding:0 0 40px ;
+  }
+}
+
+.heading__table{
+  color: $heading-colour;
+  font-family: $font-stack;
+  font-size: 36px;
+  font-weight: 100;
+  padding: 20px 0;
+  text-align: center;
 }
