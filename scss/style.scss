@@ -29,17 +29,15 @@ $coal: #3B3B3B;
   }
 }
 
+
+
+
 .btn {
   color: white;
   padding: 20px 28px;
   border-radius: 30px;
   font-family: $button-font;
   font-size: 28px;
-
-
-  &return-btn {
-    //padding:
-  }
 }
 
 .btn-main {
@@ -69,9 +67,10 @@ $coal: #3B3B3B;
 
 .logo {
   
-  &__start {
+  
+  // &__start {
 
-  }
+  // }
   
   &__img {
     display: block;
@@ -79,9 +78,11 @@ $coal: #3B3B3B;
     width: 40%;
     padding-left: 20px;
   }
+
+ 
 }
 
-.logo__start
+// .logo__start
 
 // .startpage {
 //   background-color: $background-colour;
@@ -112,6 +113,15 @@ $coal: #3B3B3B;
   text-align: center;
 }
 
+.heading{
+&__table{
+font-family: $font-stack;
+  color: $heading-colour;
+  padding-top: 50px;
+  text-align: center;
+} 
+}
+
 
 
   &__table {
@@ -132,7 +142,7 @@ $coal: #3B3B3B;
     padding: 0 0 40px 0;
     text-align: center;
   }
-}
+
 
 .container {
   &__endpage {
@@ -140,4 +150,11 @@ $coal: #3B3B3B;
   }
 }
 
+.header{
+  margin-bottom: 50px;
+  &__welcome{
+    margin-top: 20px;
+    color: #006B69;
+  }
+}
 
